@@ -16,10 +16,10 @@ import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static specs.TestSpecs.*;
 
-
+@Feature("Работа с пользователями")
 public class ApiTest extends TestBase {
 
-    @Feature("Работа с пользователями")
+
     @DisplayName("Создать нового пользователя")
     @Test
     void createPostUserTest() {
@@ -45,6 +45,8 @@ public class ApiTest extends TestBase {
     }
 
 
+
+    @DisplayName("Получение списка пользователей")
     @Test
     void getUserTest() {
 
@@ -67,6 +69,7 @@ public class ApiTest extends TestBase {
 
     }
 
+    @DisplayName("Изменение данных пользователя")
     @Test
     void putUserTest() {
 
@@ -90,6 +93,7 @@ public class ApiTest extends TestBase {
         });
     }
 
+    @DisplayName("Удаление пользователя")
     @Test
     void deleteUserTest() {
 
@@ -102,6 +106,7 @@ public class ApiTest extends TestBase {
                         .statusCode(204));
     }
 
+    @DisplayName("Изменение данных пользователя (не полное)")
     @Test
     void patchUserTest() {
 
