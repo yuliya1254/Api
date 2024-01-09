@@ -82,6 +82,11 @@ gradle clean test
 <img title="Allure TestOps Tests" src="media/screens/testsForTestOp.png">
 </p>
 
+## <img src="media/logo/Jira.svg" width="25" height="25" alt="Jira"/>Atlassian Jira интеграция</a>
+<p align="center">
+  <img title="Allure TestOps overview" src="media/screens/jira.png">
+</p>
+
 
 ## <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Telegram"/>Telegram уведомления</a>
 
@@ -89,8 +94,5 @@ gradle clean test
 <img title="Allure Overview Dashboard" src="media/screens/telegram.png">
 </p>
 
-## <img src="media/logo/Jira.svg" width="25" height="25" alt="Jira"/>Atlassian Jira интеграция</a>
-<p align="center">
-  <img title="Allure TestOps overview" src="images/jira.png">
-</p>
+
 

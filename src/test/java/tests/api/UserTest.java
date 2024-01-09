@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static specs.TestSpecs.*;
 
 @Feature("Работа с пользователями")
-public class ApiTest extends TestBase {
+public class UserTest extends TestBase {
 
 
     @DisplayName("Создать нового пользователя")
