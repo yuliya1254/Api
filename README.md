@@ -9,11 +9,15 @@
 >
 > ➠ [Покрытый функционал](#покрытый-функционал)
 >
-> ➠ [Запуск из терминала](#Запуск-тестов-из-терминала)
+> ➠ [Удаленный запуск (в Jenkins)](#Удаленный запуск (в Jenkins))
 >
-> ➠ [Сборка в Jenkins](#Сборка-в-Jenkins)
+> ➠ [Отчет в Allure report](#Отчет в Allure report)
+> 
+> ➠ [Отчет в Allure TestOps](#Отчет в Allure TestOps)
+> 
+> ➠ [JiraAtlassian Jira интеграция](#JiraAtlassian Jira интеграцияа)
 >
-> ➠ [Пример Allure-отчета](#Пример-Allure-отчета)
+> ➠ [Telegram уведомления](#Telegram уведомления)
 
 
 ## Технологии и инструменты
@@ -27,9 +31,9 @@
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="media/logo/Jenkins.svg"></a>
 <a href="https://allurereport.org/"><img width="6%" title="Allure Report" src="media/logo/Allure_Report.svg"></a>
 <a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/logo/Allure_TO.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira"><img width="5%" title="Jira" src="media/logo/Jira.svg"></a>
 <a href="https://web.telegram.org/"><img width="5%" title="Telegram" src="media/logo/Telegram.svg"></a>
 </p>
-В данном проекте автотесты написаны на <code>Java</code>.
 
 ## Покрытый функционал
 
