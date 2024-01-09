@@ -11,7 +11,7 @@
 >
 > ➠ [Запуск тестов из терминала](#Запуск-тестов-из-терминала)
 >
-> ➠ [Удаленный запуск (в Jenkins)](#Удаленный запуск-(в Jenkins))
+> ➠ [Удаленный запуск (в Jenkins)](#Удаленный-запуск-(в-Jenkins))
 >
 > ➠ [Отчет в Allure report](#Отчет в Allure report)
 > 
@@ -53,7 +53,7 @@
 gradle clean test
 ```
 
-###  :rocket: Удаленный запуск (в Jenkins):
+##  Удаленный запуск (в Jenkins):
 <p align="center">
 <img title="Jenkins" src="media/screens/JenkinsBuild.png">
 </p>
