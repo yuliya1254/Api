@@ -1,6 +1,6 @@
 <h1 >Демопроект автоматизации тестирования API на <a href="https://reqres.in/">reqres.in</a></h1>
 
-![WB_logo.jpg](src/media/logo/reqres_logo.png)
+![WB_logo.jpg](src/media/logo/logo_reqres.jpeg)
 
 ## :page_with_curl: Содержание
 
