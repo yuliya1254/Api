@@ -47,24 +47,50 @@
 gradle clean test
 ```
 
-## Сборка в [Jenkins](https://jenkins.autotests.cloud/job/HW_API_22/)
-Для запуска сборки необходимо перейти в раздел <code>Build Now</code>
-
+###  :rocket: Удаленный запуск (в Jenkins):
 <p align="center">
-<img title="Jenkins Build" src="media/screens/JenkinsBuild.png">
+<img title="Jenkins" src="media/screens/JenkinsBuild.png">
 </p>
 
-После выполнения сборки, в блоке <code>Build History</code> напротив номера сборки появится значок <code>Allure Report</code> кликнув по которому, откроется страница с сформированным html-отчетом.
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/HW_API_22/">проект</a>
+2. Нажать **Build with Parameters**
+3. Результат запуска сборки можно посмотреть в отчёте Allure
 
-## Пример [Allure-отчета](https://jenkins.autotests.cloud/job/diplom_api/3/allure/)
-### Overview
+## :triangular_flag_on_post: Allure отчеты:
 
+### <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/HW_API_22/9/allure/"> report</a>
+
+#### :black_small_square: Основной отчет
 <p align="center">
-<img title="Allure Overview" src="media/screens/allureReport.png">
+<img title="Allure Report Dashboards" src="media/screens/allureReport.png">
 </p>
 
-### Результат выполнения теста
+#### :black_small_square: Тесты
+<p align="center">
+<img title="Allure Report Tests" src="media/screens/testForAllure.png">
+</p>
+
+### <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/project/3938/dashboards"> TestOps</a>
+
+#### :black_small_square: Основной отчет
+<p align="center">
+<img title="Allure TestOps Dashboards" src="media/screens/testOpsOrhet.png">
+</p>
+
+#### :black_small_square: Тесты
+<p align="center">
+<img title="Allure TestOps Tests" src="media/screens/testsForTestOp.png">
+</p>
+
+
+## <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Telegram"/>Telegram уведомления</a>
 
 <p align="center">
-<img title="Test Results in Alure" src="media/screens/ResultTest.png">
+<img title="Allure Overview Dashboard" src="media/screens/telegram.png">
 </p>
+
+## <img src="media/logo/Jira.svg" width="25" height="25" alt="Jira"/>Atlassian Jira интеграция</a>
+<p align="center">
+  <img title="Allure TestOps overview" src="images/jira.png">
+</p>
+
