@@ -1,9 +1,9 @@
-package models.patchUser;
+package models.putuser;
 
 import lombok.Data;
 
 @Data
-public class PatchUserRequest {
+public class PutUserRequest {
     String name;
     String job;
 }

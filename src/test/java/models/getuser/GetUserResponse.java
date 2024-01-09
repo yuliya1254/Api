@@ -1,4 +1,4 @@
-package models.getUser;
+package models.getuser;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

@@ -1,9 +1,9 @@
-package models.putUser;
+package models.patchuser;
 
 import lombok.Data;
 
 @Data
-public class PutUserResponse {
+public class PatchUserResponse {
     String name;
     String job;
     String updatedAt;

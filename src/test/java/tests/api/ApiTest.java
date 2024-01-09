@@ -1,13 +1,13 @@
 package tests.api;
 
 import io.qameta.allure.Feature;
-import models.createPostUser.CreatePostUserRequest;
-import models.createPostUser.CreatePostUserResponse;
-import models.getUser.GetUserResponse;
-import models.patchUser.PatchUserRequest;
-import models.patchUser.PatchUserResponse;
-import models.putUser.PutUserRequest;
-import models.putUser.PutUserResponse;
+import models.createpostuser.CreatePostUserRequest;
+import models.createpostuser.CreatePostUserResponse;
+import models.getuser.GetUserResponse;
+import models.patchuser.PatchUserRequest;
+import models.patchuser.PatchUserResponse;
+import models.putuser.PutUserRequest;
+import models.putuser.PutUserResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
