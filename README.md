@@ -13,13 +13,11 @@
 >
 > ➠ [Удаленный запуск](#Удаленный-запуск)
 >
-> ➠ [Отчет в Allure report](#Отчет в Allure report)
+> ➠ [Отчет в Allure report](#Allure-отчеты)
 > 
-> ➠ [Отчет в Allure TestOps](#Отчет в Allure TestOps)
-> 
-> ➠ [JiraAtlassian Jira интеграция](#JiraAtlassian Jira интеграцияа)
+> ➠ [JiraAtlassian Jira интеграция](#JiraAtlassian-Jira-интеграция)
 >
-> ➠ [Telegram уведомления](#Telegram уведомления)
+> ➠ [Telegram уведомления](#Telegram-уведомления)
 
 
 ## Технологии и инструменты
@@ -62,7 +60,7 @@ gradle clean test
 2. Нажать **Build with Parameters**
 3. Результат запуска сборки можно посмотреть в отчёте Allure
 
-## :triangular_flag_on_post: Allure отчеты:
+##  Allure отчеты
 
 ### <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/HW_API_22/9/allure/"> report</a>
 
