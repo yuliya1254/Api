@@ -47,7 +47,7 @@
 gradle clean test
 ```
 
-## Сборка в [Jenkins](https://jenkins.autotests.cloud/job/diplom_api/)
+## Сборка в [Jenkins](https://jenkins.autotests.cloud/job/HW_API_22/)
 Для запуска сборки необходимо перейти в раздел <code>Build Now</code>
 
 <p align="center">

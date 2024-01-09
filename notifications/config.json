@@ -1,0 +1,17 @@
+{
+  "base": {
+    "logo": "",
+    "project": "wildberries",
+    "environment": "PROD",
+    "comment": "-",
+    "reportLink": "",
+    "language": "ru",
+    "allureFolder": "allure-report",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "6586880966:AAF-ByJfRWvhjBZoHTtHBx1_R-rk1TlcG_w",
+    "chat": "-1002041726293",
+    "replyTo": ""
+  }
+}
