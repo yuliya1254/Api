@@ -62,7 +62,7 @@ gradle clean test
 
 ##  Allure отчеты
 
-### <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/HW_API_22/9/allure/"> report</a>
+### <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/HW_API_22/allure/"> report</a>
 
 #### :black_small_square: Основной отчет
 <p align="center">
