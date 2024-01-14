@@ -40,6 +40,7 @@ public class UserTest extends TestBase {
                         isEqualTo("leader"));
 
     }
+
     @DisplayName("Получение списка пользователей")
     @Test
     void getUserTest() {
@@ -61,6 +62,7 @@ public class UserTest extends TestBase {
                         isEqualTo("https://reqres.in/#support-heading"));
 
     }
+
     @DisplayName("Изменение данных пользователя")
     @Test
     void putUserTest() {
