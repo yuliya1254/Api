@@ -15,7 +15,7 @@
 >
 > ➠ [Отчет в Allure report](#Allure-отчеты)
 > 
-> ➠ [JiraAtlassian Jira интеграция](#JiraAtlassian-Jira)
+> ➠ [JiraAtlassian Jira интеграция](#Jira)
 >
 > ➠ [Telegram уведомления](#Telegram-уведомления)
 
@@ -86,6 +86,7 @@ gradle clean test
 <img title="Allure TestOps Tests" src="media/screens/testsForTestOp.png">
 </p>
 
+##  Jira
 ## <img src="media/logo/Jira.svg" width="25" height="25" alt="Jira"/>Atlassian Jira</a> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1031"> интеграция</a>
 <p align="center">
   <img title="Allure TestOps overview" src="media/screens/jira.png">
