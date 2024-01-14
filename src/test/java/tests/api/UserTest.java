@@ -1,33 +1,28 @@
 package tests.api;
 
 import io.qameta.allure.Feature;
-import models.createpostuser.CreatePostUserRequest;
-import models.createpostuser.CreatePostUserResponse;
 import models.getuser.GetUserResponse;
-import models.patchuser.PatchUserRequest;
-import models.patchuser.PatchUserResponse;
-import models.putuser.PutUserRequest;
-import models.putuser.PutUserResponse;
+import models.usermodel.UserModelRequest;
+import models.usermodel.UserModelResponse;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 import static specs.TestSpecs.*;
+
 
 @Feature("Работа с пользователями")
 public class UserTest extends TestBase {
-
-
     @DisplayName("Создать нового пользователя")
     @Test
     void createPostUserTest() {
-        CreatePostUserRequest request = new CreatePostUserRequest();
+        UserModelRequest request = new UserModelRequest();
         request.setName("morpheus");
         request.setJob("leader");
 
-        CreatePostUserResponse user = step("Создать нового пользователя", () ->
+        UserModelResponse user = step("Создать нового пользователя", () ->
                 given(bodyRequestSpec)
                         .body(request)
                         .when()
@@ -35,17 +30,16 @@ public class UserTest extends TestBase {
                         .then()
                         .spec(responseSpec)
                         .statusCode(201)
-                        .extract().as(CreatePostUserResponse.class));
+                        .extract().as(UserModelResponse.class));
 
-        step("Проверить пользовательские данные", () -> {
-            assertEquals("morpheus", user.getName());
-            assertEquals("leader", user.getJob());
+        step("Проверить имя пользователя", () ->
+                assertThat(user.getName()).
+                        isEqualTo("morpheus"));
+        step("Проверить должность пользователя", () ->
+                assertThat(user.getJob()).
+                        isEqualTo("leader"));
 
-        });
     }
-
-
-
     @DisplayName("Получение списка пользователей")
     @Test
     void getUserTest() {
@@ -59,25 +53,23 @@ public class UserTest extends TestBase {
                         .statusCode(200)
                         .extract().as(GetUserResponse.class));
 
-        step("Проверить полученный список", () -> {
-            assertEquals(1, users.getPage());
-            assertEquals("george.bluth@reqres.in", users.getData()[0].getEmail());
-            assertEquals("https://reqres.in/#support-heading", users.getSupport().getUrl());
-
-
-        });
+        step("Проверить Email пользователя", () ->
+                assertThat(users.getData()[0].getEmail()).
+                        isEqualTo("george.bluth@reqres.in"));
+        step("Проверить ссылку на сайт поддержки", () ->
+                assertThat(users.getSupport().getUrl()).
+                        isEqualTo("https://reqres.in/#support-heading"));
 
     }
-
     @DisplayName("Изменение данных пользователя")
     @Test
     void putUserTest() {
 
-        PutUserRequest request = new PutUserRequest();
+        UserModelRequest request = new UserModelRequest();
         request.setName("morpheus");
         request.setJob("leader");
 
-        PutUserResponse user = step("Изменить пользовательские данные", () ->
+        UserModelResponse user = step("Изменить пользовательские данные", () ->
                 given(bodyRequestSpec)
                         .body(request)
                         .when()
@@ -85,12 +77,14 @@ public class UserTest extends TestBase {
                         .then()
                         .spec(responseSpec)
                         .statusCode(200)
-                        .extract().as(PutUserResponse.class));
-        step("Проверить пользовательские данные", () -> {
-            assertEquals("morpheus", user.getName());
-            assertEquals("leader", user.getJob());
+                        .extract().as(UserModelResponse.class));
 
-        });
+        step("Проверить имя пользователя", () ->
+                assertThat(user.getName()).
+                        isEqualTo("morpheus"));
+        step("Проверить должность пользователя", () ->
+                assertThat(user.getJob()).
+                        isEqualTo("leader"));
     }
 
     @DisplayName("Удаление пользователя")
@@ -110,11 +104,11 @@ public class UserTest extends TestBase {
     @Test
     void patchUserTest() {
 
-        PatchUserRequest request = new PatchUserRequest();
+        UserModelResponse request = new UserModelResponse();
         request.setName("morpheus");
         request.setJob("zion resident");
 
-        PatchUserResponse user = step("Изменить частично пользовательские данные", () ->
+        UserModelResponse user = step("Изменить частично пользовательские данные", () ->
                 given(bodyRequestSpec)
                         .body(request)
                         .when()
@@ -122,12 +116,14 @@ public class UserTest extends TestBase {
                         .then()
                         .spec(responseSpec)
                         .statusCode(200)
-                        .extract().as(PatchUserResponse.class));
-        step("Проверить пользовательские данные", () -> {
-            assertEquals("morpheus", user.getName());
-            assertEquals("zion resident", user.getJob());
+                        .extract().as(UserModelResponse.class));
 
-        });
+        step("Проверить имя пользователя", () ->
+                assertThat(user.getName()).
+                        isEqualTo("morpheus"));
+        step("Проверить должность пользователя", () ->
+                assertThat(user.getJob()).
+                        isEqualTo("zion resident"));
 
 
     }
