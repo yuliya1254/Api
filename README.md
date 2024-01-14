@@ -9,13 +9,15 @@
 >
 > ➠ [Покрытый функционал](#покрытый-функционал)
 >
-> ➠ [Запуск из терминала](#Запуск-тестов-из-терминала)
+> ➠ [Запуск тестов из терминала](#Запуск-тестов-из-терминала)
 >
-> ➠ [Сборка в Jenkins](#Сборка-в-Jenkins)
+> ➠ [Удаленный запуск](#Удаленный-запуск)
 >
-> ➠ [Пример Allure-отчета](#Пример-Allure-отчета)
+> ➠ [Отчет в Allure report](#Allure-отчеты)
 > 
->  ➠ [Пример отчет в Allure TestOps](#Пример-Allure-отчета)
+> ➠ [JiraAtlassian Jira интеграция](#JiraAtlassian-Jira-интеграция)
+>
+> ➠ [Telegram уведомления](#Telegram-уведомления)
 
 
 ## Технологии и инструменты
@@ -29,9 +31,9 @@
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="media/logo/Jenkins.svg"></a>
 <a href="https://allurereport.org/"><img width="6%" title="Allure Report" src="media/logo/Allure_Report.svg"></a>
 <a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/logo/Allure_TO.svg"></a>
+<a href="https://www.atlassian.com/ru/software/jira"><img width="5%" title="Jira" src="media/logo/Jira.svg"></a>
 <a href="https://web.telegram.org/"><img width="5%" title="Telegram" src="media/logo/Telegram.svg"></a>
 </p>
-В данном проекте автотесты написаны на <code>Java</code>.
 
 ## Покрытый функционал
 
@@ -49,7 +51,7 @@
 gradle clean test
 ```
 
-###  :rocket: Удаленный запуск (в Jenkins):
+##  Удаленный запуск
 <p align="center">
 <img title="Jenkins" src="media/screens/JenkinsBuild.png">
 </p>
@@ -58,9 +60,9 @@ gradle clean test
 2. Нажать **Build with Parameters**
 3. Результат запуска сборки можно посмотреть в отчёте Allure
 
-## :triangular_flag_on_post: Allure отчеты:
+##  Allure отчеты
 
-### <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/HW_API_22/9/allure/"> report</a>
+### <img src="media/logo/Allure_Report.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/HW_API_22/allure/"> report</a>
 
 #### :black_small_square: Основной отчет
 <p align="center">
